@@ -17,8 +17,6 @@ except FileNotFoundError:
 else:
     to_learn = data.to_dict(orient="records")
 
-
-
 def next_card():
     global current_card, flip_timer
     window.after_cancel(flip_timer)
@@ -67,7 +65,5 @@ right_button = Button(image=check_image, highlightthickness=0, command=is_known)
 right_button.grid(column=1, row=1)
 
 next_card()
-
-
 
 window.mainloop()
