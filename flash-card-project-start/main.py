@@ -45,6 +45,7 @@ window = Tk()
 window.title("Flashy")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
+# Automatically flip card
 flip_timer = window.after(3000, func=flip_card)
 
 canvas = Canvas(width=800, height=526)
